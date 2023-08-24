@@ -39,6 +39,7 @@
     <script type="text/javascript" src="wpscripts/jquery.js"></script>
     <script type="text/javascript" src="wpscripts/jquery.wplightbox.js"></script>
     <script type="text/javascript" src="wpscripts/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="wpscripts/audio.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
       $("#form_20").validate({ onkeyup: false, showErrors: function(errorMap, errorList) { if (errorList.length) alert(errorList[0].message); }, onclick: false, rules: { 'Email': { email: true }  }, onfocusout: false, messages: { 'Email': {  }  } });
@@ -47,6 +48,7 @@
       {"loadBtnSrc":"wpimages/lightbox_load.gif","playBtnSrc":"wpimages/lightbox_play.png","playOverBtnSrc":"wpimages/lightbox_play_over.png","pauseBtnSrc":"wpimages/lightbox_pause.png","pauseOverBtnSrc":"wpimages/lightbox_pause_over.png","border_e":"wpimages/lightbox_e_6.png","border_n":"wpimages/lightbox_n_6.png","border_w":"wpimages/lightbox_w_6.png","border_s":"wpimages/lightbox_s_6.png","border_ne":"wpimages/lightbox_ne_6.png","border_se":"wpimages/lightbox_se_6.png","border_nw":"wpimages/lightbox_nw_6.png","border_sw":"wpimages/lightbox_sw_6.png","closeBtnSrc":"wpimages/lightbox_close_2.png","closeOverBtnSrc":"wpimages/lightbox_close_over_2.png","nextBtnSrc":"wpimages/lightbox_next_2.png","nextOverBtnSrc":"wpimages/lightbox_next_over_2.png","prevBtnSrc":"wpimages/lightbox_prev_2.png","prevOverBtnSrc":"wpimages/lightbox_prev_over_2.png","blankSrc":"wpscripts/blank.gif","bBkgrndClickable":true,"strBkgrndCol":"#000000","nBkgrndOpacity":0.5,"strContentCol":"#ffffff","nContentOpacity":0.8,"strCaptionCol":"#555555","nCaptionOpacity":1.0,"nCaptionType":1,"bCaptionCount":true,"strCaptionFontType":"Tahoma,Serif","strCaptionFontCol":"#ffffff","nCaptionFontSz":15,"bShowPlay":true,"bAnimateOpenClose":true,"nPlayPeriod":2000}
       );
       });
+      audiojs.events.ready(function() { var as = audiojs.createAll(); });
     </script>
   </head>
   <body style="height:1249px;background:#ffffff;">
@@ -115,7 +117,7 @@
       <img alt="" src="wpimages/wp8f23c721_06.png" style="position:absolute;left:1130px;top:873px;width:24px;height:24px;">
       <img alt="+233240240898 / +233508282330 Mon to Fri @ 7:30 am to 9:30 pm" src="wpimages/wp804fea66_06.png" style="position:absolute;left:1176px;top:808px;width:271px;height:41px;">
       <img alt="nanaknet23@gmail.com" src="wpimages/wp3022dcfa_06.png" style="position:absolute;left:1176px;top:872px;width:186px;height:41px;">
-      <table border="1" class="OBJ-4" style="position:absolute;left:636px;top:691px;width:419px;height:258px;">
+      <table border="1" class="OBJ-4" style="position:absolute;left:508px;top:691px;width:419px;height:258px;">
         <col style="width:60px;">
         <col style="width:60px;">
         <col style="width:60px;">
@@ -286,6 +288,7 @@
         <textarea id="Message" name="Message" class="OBJ-8" style="position:absolute;left:4px;top:275px;width:476px;height:82px;"></textarea>
         <input name="Submit" class="OBJ-9" type="submit" value="Submit" style="position:absolute;left:171px;top:364px;width:111px;height:41px;">
       </form>
+      <div style="position:absolute;left:1055px;top:655px;width:460px;height:36px;"><audio src="Chamillionaire ft. Akon - Ridin_ overseas(MP3_128K).mp3" loop="" class="inlineAudio"></audio></div>
     </div>
   </body>
 </html>
