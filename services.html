@@ -24,6 +24,7 @@
       .C-3 { line-height:16.00px;font-family:"Georgia", serif;font-style:normal;font-weight:normal;color:#ffffff;background-color:transparent;text-decoration:none;font-variant:normal;font-size:13.3px;vertical-align:0; }
     </style>
     <script type="text/javascript" src="wpscripts/jquery.js"></script>
+    <script type="text/javascript" src="wpscripts/jquery.wplightbox.js"></script>
     <script type="text/javascript" src="wpscripts/jquery.event.move.js"></script>
     <script type="text/javascript" src="wpscripts/jquery.event.swipe.js"></script>
     <script type="text/javascript" src="wpscripts/jquery.wpslider.js"></script>
@@ -40,6 +41,9 @@
       $('#slider_62').data('wpslider', new $.fn.wpslider( { g_nDivId:'#slider_62', g_nTransitStyle:9, g_nLoopTime:2000, g_nAnimationTime:500, g_bPlayAtStart:true, g_nOverlaySlidePos:1, g_nOverlaySlideMargin:50, g_strEasing: "swing" } ) );
       var btnState = [];
       $("a.ActiveButton").bind({ mousedown:function(){if ( $(this).attr('disabled') === undefined ) $(this).addClass('Activated');}, mouseleave:function(){ if ( $(this).attr('disabled') === undefined ) $(this).removeClass('Activated');}, mouseup:function(){ if ( $(this).attr('disabled') === undefined ) $(this).removeClass('Activated');}});
+      $('.wplightbox').wplightbox(
+      {"loadBtnSrc":"wpimages/lightbox_load.gif","playBtnSrc":"wpimages/lightbox_play.png","playOverBtnSrc":"wpimages/lightbox_play_over.png","pauseBtnSrc":"wpimages/lightbox_pause.png","pauseOverBtnSrc":"wpimages/lightbox_pause_over.png","border_e":"wpimages/lightbox_e_6.png","border_n":"wpimages/lightbox_n_6.png","border_w":"wpimages/lightbox_w_6.png","border_s":"wpimages/lightbox_s_6.png","border_ne":"wpimages/lightbox_ne_6.png","border_se":"wpimages/lightbox_se_6.png","border_nw":"wpimages/lightbox_nw_6.png","border_sw":"wpimages/lightbox_sw_6.png","closeBtnSrc":"wpimages/lightbox_close_2.png","closeOverBtnSrc":"wpimages/lightbox_close_over_2.png","nextBtnSrc":"wpimages/lightbox_next_2.png","nextOverBtnSrc":"wpimages/lightbox_next_over_2.png","prevBtnSrc":"wpimages/lightbox_prev_2.png","prevOverBtnSrc":"wpimages/lightbox_prev_over_2.png","blankSrc":"wpscripts/blank.gif","bBkgrndClickable":true,"strBkgrndCol":"#000000","nBkgrndOpacity":0.5,"strContentCol":"#ffffff","nContentOpacity":0.8,"strCaptionCol":"#555555","nCaptionOpacity":1.0,"nCaptionType":1,"bCaptionCount":true,"strCaptionFontType":"Tahoma,Serif","strCaptionFontCol":"#ffffff","nCaptionFontSz":15,"bShowPlay":true,"bAnimateOpenClose":true,"nPlayPeriod":2000}
+      );
       $('#slider_58').data('wpslider').restrictSlides();
       $('#slider_59').data('wpslider').restrictSlides();
       $('#slider_60').data('wpslider').restrictSlides();
@@ -111,8 +115,10 @@
         <area shape="poly" coords="20,29,24,26,26,21,27,16,26,11,24,6,21,3,19,2,13,2,9,5,6,9,5,14,5,21,7,25,11,28,13,30,19,30" href="index.html" alt="">
       </map>
       <img alt="Home" usemap="#map4" src="wpimages/wpb770cd6d_06.png" style="position:absolute;left:1358px;top:1198px;width:32px;height:32px;">
-      <img alt="" src="wpimages/wpf8639272_06.png" style="position:absolute;left:1203px;top:157px;width:315px;height:355px;">
-      <img src="wpimages/wp4c31ec07_06.png" alt="" width="162" height="104" style="position:absolute;left:65px;top:63px;width:162px;height:104px;">
+      <a data-lightbox="{&quot;galleryId&quot;:&quot;wplightbox&quot;}" class="wplightbox" href="IMG_20180802_211441-removebg-preview.png">
+        <img alt="" src="wpimages/wpf8639272_06.png" style="position:absolute;left:1203px;top:157px;width:315px;height:355px;">
+      </a>
+      <img src="wpimages/wp4af2e201_06.png" alt="" width="162" height="104" style="position:absolute;left:65px;top:63px;width:162px;height:104px;">
       <map id="map5" name="map5">
         <area shape="rect" coords="103,4,128,66">
         <area shape="rect" coords="133,5,299,66" href="services.html" alt="">

@@ -19,6 +19,7 @@
       .OBJ-3 { line-height:33px; }
     </style>
     <script type="text/javascript" src="wpscripts/jquery.js"></script>
+    <script type="text/javascript" src="wpscripts/jquery.wplightbox.js"></script>
     <script type="text/javascript" src="wpscripts/jquery.timers.js"></script>
     <script type="text/javascript" src="wpscripts/jquery.wpgallery.js"></script>
     <script type="text/javascript">
@@ -270,6 +271,9 @@ $('#wp_gallery_pg_4').wpgallery({
       	strThumbForwardToolTip: 'Forward'
       });
       $("a.ActiveButton").bind({ mousedown:function(){if ( $(this).attr('disabled') === undefined ) $(this).addClass('Activated');}, mouseleave:function(){ if ( $(this).attr('disabled') === undefined ) $(this).removeClass('Activated');}, mouseup:function(){ if ( $(this).attr('disabled') === undefined ) $(this).removeClass('Activated');}});
+      $('.wplightbox').wplightbox(
+      {"loadBtnSrc":"wpimages/lightbox_load.gif","playBtnSrc":"wpimages/lightbox_play.png","playOverBtnSrc":"wpimages/lightbox_play_over.png","pauseBtnSrc":"wpimages/lightbox_pause.png","pauseOverBtnSrc":"wpimages/lightbox_pause_over.png","border_e":"wpimages/lightbox_e_6.png","border_n":"wpimages/lightbox_n_6.png","border_w":"wpimages/lightbox_w_6.png","border_s":"wpimages/lightbox_s_6.png","border_ne":"wpimages/lightbox_ne_6.png","border_se":"wpimages/lightbox_se_6.png","border_nw":"wpimages/lightbox_nw_6.png","border_sw":"wpimages/lightbox_sw_6.png","closeBtnSrc":"wpimages/lightbox_close_2.png","closeOverBtnSrc":"wpimages/lightbox_close_over_2.png","nextBtnSrc":"wpimages/lightbox_next_2.png","nextOverBtnSrc":"wpimages/lightbox_next_over_2.png","prevBtnSrc":"wpimages/lightbox_prev_2.png","prevOverBtnSrc":"wpimages/lightbox_prev_over_2.png","blankSrc":"wpscripts/blank.gif","bBkgrndClickable":true,"strBkgrndCol":"#000000","nBkgrndOpacity":0.5,"strContentCol":"#ffffff","nContentOpacity":0.8,"strCaptionCol":"#555555","nCaptionOpacity":1.0,"nCaptionType":1,"bCaptionCount":true,"strCaptionFontType":"Tahoma,Serif","strCaptionFontCol":"#ffffff","nCaptionFontSz":15,"bShowPlay":true,"bAnimateOpenClose":true,"nPlayPeriod":2000}
+      );
       });
       var nImgNum_pg_2 = 0;
       wp_imgArray_pg_2 = new Array();
@@ -315,27 +319,43 @@ $('#wp_gallery_pg_4').wpgallery({
       <img alt="Thank you for visiting, Let's work together to keep your technology running smoothly!   78 Sefa Atweneboah II Street Koforidua - Asokore Eastern Region of Ghana" src="wpimages/wpc00f7cc1_06.png" style="position:absolute;left:289px;top:1000px;width:941px;height:181px;">
       <img alt="2023 All rights reserved | Developed with Love by Ephraim" src="wpimages/wp3d9a659f_06.png" style="position:absolute;left:116px;top:1205px;width:367px;height:28px;">
       <img alt="Stay Connected" src="wpimages/wpf9bdfaf8_06.png" style="position:absolute;left:1073px;top:1202px;width:96px;height:28px;">
-      <map id="map1" name="map1"><area shape="poly" coords="18,16,22,15,24,12,18,12,18,7,22,6,22,1,18,2,14,4,13,4,13,12,9,12,9,16,13,16,13,31,18,31" href="https://web.facebook.com/syrresa" target="_blank" alt=""></map>
+      <map id="map1" name="map1"><area shape="poly" coords="18,16,22,15,23,11,18,11,18,7,22,6,22,1,16,1,12,5,12,11,8,11,8,16,12,16,12,31,18,31" href="https://web.facebook.com/syrresa" target="_blank" alt=""></map>
       <img alt="" usemap="#map1" src="wpimages/wpa7d8173d_06.png" style="position:absolute;left:1204px;top:1198px;width:32px;height:32px;">
-      <map id="map2" name="map2"><area shape="poly" coords="24,31,30,26,32,23,32,10,27,4,21,0,20,1,15,0,8,3,2,9,0,12,1,14,0,18,3,25,10,32,23,32" href="mailto:nanaknet23@gmail.com" alt=""></map>
+      <map id="map2" name="map2"><area shape="poly" coords="23,30,29,26,32,20,32,11,29,6,26,3,20,0,12,0,6,3,1,9,0,12,0,18,2,25,7,29,13,32,18,32" href="mailto:nanaknet23@gmail.com" alt=""></map>
       <img alt="Mail: nanaknet23@gmail.com" usemap="#map2" src="wpimages/wp88893e60_06.png" style="position:absolute;left:1252px;top:1198px;width:32px;height:32px;">
-      <map id="map3" name="map3"><area shape="poly" coords="18,28,23,26,28,22,29,16,27,10,24,5,19,3,13,4,8,7,4,12,4,20,8,25,12,28,17,29" href="https://wa.me/+233240240898" target="_blank" alt=""></map>
+      <map id="map3" name="map3"><area shape="poly" coords="19,27,23,25,27,21,29,16,27,10,23,5,19,3,13,3,8,6,4,11,4,20,7,24,12,27,14,28" href="https://wa.me/+233240240898" target="_blank" alt=""></map>
       <img alt="" usemap="#map3" src="wpimages/wp545a698f_06.png" style="position:absolute;left:1308px;top:1198px;width:32px;height:32px;">
       <map id="map4" name="map4">
-        <area shape="poly" coords="16,26,16,25,17,25" href="index.html" alt="">
-        <area shape="poly" coords="19,25,18,25,19,24" href="index.html" alt="">
-        <area shape="rect" coords="17,22,19,24" href="index.html" alt="">
-        <area shape="poly" coords="15,25,13,25,12,23,10,21,12,21,12,23,13,24,15,24" href="index.html" alt="">
-        <area shape="rect" coords="22,20,24,22" href="index.html" alt="">
-        <area shape="rect" coords="16,16,18,18" href="index.html" alt="">
-        <area shape="poly" coords="23,15,22,15,23,14" href="index.html" alt="">
-        <area shape="rect" coords="12,13,14,15" href="index.html" alt="">
-        <area shape="poly" coords="22,11,21,11,21,10" href="index.html" alt="">
-        <area shape="poly" coords="21,10,20,9,17,9,17,8,15,8,16,7,17,7,18,8,19,8,20,9" href="index.html" alt="">
-        <area shape="poly" coords="19,30,24,27,27,22,28,17,27,11,24,6,19,2,13,3,8,7,5,12,5,22,8,27,13,31" href="index.html" alt="">
+        <area shape="poly" coords="18,25,17,25,18,24" href="index.html" alt="">
+        <area shape="poly" coords="16,25,14,25,14,24,12,24,12,23,13,23,14,24,16,23,15,24" href="index.html" alt="">
+        <area shape="poly" coords="20,24,19,24,18,23,20,23,21,22,22,21,22,22,21,23" href="index.html" alt="">
+        <area shape="poly" coords="18,23,17,23,17,22,16,22,16,21,17,22,18,22" href="index.html" alt="">
+        <area shape="poly" coords="12,23,11,23,11,22,10,21,12,21" href="index.html" alt="">
+        <area shape="poly" coords="22,21,21,20,22,20,22,19,23,19,22,20" href="index.html" alt="">
+        <area shape="poly" coords="21,20,20,19,21,19" href="index.html" alt="">
+        <area shape="rect" coords="14,19,16,21" href="index.html" alt="">
+        <area shape="rect" coords="19,18,21,20" href="index.html" alt="">
+        <area shape="poly" coords="15,18,15,17,16,17" href="index.html" alt="">
+        <area shape="poly" coords="20,17,20,16,21,16" href="index.html" alt="">
+        <area shape="poly" coords="17,17,16,16,17,16" href="index.html" alt="">
+        <area shape="poly" coords="16,16,15,16,15,15" href="index.html" alt="">
+        <area shape="poly" coords="10,20,9,19,10,18,11,17,11,16,12,15,12,16,11,17,12,18,10,18" href="index.html" alt="">
+        <area shape="poly" coords="14,15,13,14,14,14" href="index.html" alt="">
+        <area shape="poly" coords="20,14,19,13,20,13" href="index.html" alt="">
+        <area shape="rect" coords="17,12,19,14" href="index.html" alt="">
+        <area shape="poly" coords="13,14,12,14,12,13,13,12,13,13,12,13" href="index.html" alt="">
+        <area shape="poly" coords="9,14,9,13,10,12" href="index.html" alt="">
+        <area shape="poly" coords="19,11,18,11,19,10" href="index.html" alt="">
+        <area shape="poly" coords="16,11,15,10,16,10" href="index.html" alt="">
+        <area shape="poly" coords="11,12,10,12,10,10,11,10,11,9,12,9,11,10" href="index.html" alt="">
+        <area shape="poly" coords="23,15,21,15,23,13,20,10,19,9,19,8,20,9,22,11,22,12,23,13" href="index.html" alt="">
+        <area shape="poly" coords="15,10,13,8,12,9,14,7,18,7,19,8,18,9,17,8,16,9,17,8,14,8,15,9" href="index.html" alt="">
+        <area shape="poly" coords="20,29,24,26,26,21,27,16,26,11,24,6,21,3,19,2,13,2,9,5,6,9,5,14,5,21,7,25,11,28,13,30,19,30" href="index.html" alt="">
       </map>
       <img alt="Home" usemap="#map4" src="wpimages/wpb770cd6d_06.png" style="position:absolute;left:1358px;top:1198px;width:32px;height:32px;">
-      <img alt="" src="wpimages/wpf8639272_06.png" style="position:absolute;left:1203px;top:157px;width:315px;height:355px;">
+      <a data-lightbox="{&quot;galleryId&quot;:&quot;wplightbox&quot;}" class="wplightbox" href="IMG_20180802_211441-removebg-preview.png">
+        <img alt="" src="wpimages/wpf8639272_06.png" style="position:absolute;left:1203px;top:157px;width:315px;height:355px;">
+      </a>
       <img src="wpimages/wp4af2e201_06.png" alt="" width="162" height="104" style="position:absolute;left:65px;top:63px;width:162px;height:104px;">
       <map id="map5" name="map5">
         <area shape="rect" coords="103,4,128,66">
